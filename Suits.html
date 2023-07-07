@@ -97,7 +97,7 @@
               <a href="javascript:void(0);" tabindex="0">
                 <div class="res-logo">
                   <div class="channel-logo">
-                    <img src="images/Media/DNA/DNA Home Page.jpg" style="height: 75px; width: 75px;" class="c-logo" alt="">
+                    <img src="Images/Media/DNA/DNA Home Page.jpg" style="height: 75px; width: 75px;" class="c-logo" alt="">
                   </div>
                 </div>
               </a>
@@ -118,7 +118,7 @@
               </p>
               <div class="p-btns">
                 <div class="d-flex align-items-center p-0">
-                  <a href="#trending-data22" class="btn btn-hover mr-2" tabindex="0">
+                  <a href="#" class="btn btn-hover mr-2" tabindex="0">
                     <i class="fa fa-play mr-2"></i>
                     Play Now
                   </a>
@@ -155,7 +155,7 @@
             <div class="trending-info align-items-center w-100 animated fadeInUp">
               <a href="#" tabindex="0">
                 <div class="channel-logo">
-                  <img src="Images/Media/DNA/DNA Home Page.jpg" style="height: 75px; width: 75px;" class="c-logo" alt="">
+                  <img src="images/Media/DNA/DNA Home Page.jpg" style="height: 75px; width: 75px;" class="c-logo" alt="">
                 </div>
               </a>
               <h1 class="trending-text big-title text-uppercase">Suits</h1>
@@ -166,25 +166,21 @@
                 <span class="trending-year">Sept 2019</span>
               </div>
               <div class="iq-custom-select d-inline-block sea-epi">
-                <select name="Seasons" class="form-control season-select" id="my_selection">
-                  <option value="Season 1" href="#S1">Season 01</option>
-                  <option value="Season 2" href="#S2">Season 02</option>
-                  <option value="Season2">Season 03</option>
-                  <option value="Season2">Season 04</option>
-                  <option value="Season2">Season 05</option>
-                  <option value="Season2">Season 06</option>
-                  <option value="Season2">Season 07</option>
-                  <option value="Season2">Season 08</option>
-                  <option value="Season2">Season 09</option>
+                <select name="Seasons" id="select" class="form-control season-select">
+                  <option value="">Select Season</option>
+                  <option value="Season1">Season 01</option>
+                  <option value="Season2">Season 02</option>
+                  <option value="Season3">Season 03</option>
+                  <option value="Season4">Season 04</option>
+                  <option value="Season5">Season 05</option>
+                  <option value="Season6">Season 06</option>
+                  <option value="Season7">Season 07</option>
+                  <option value="Season8">Season 08</option>
+                  <option value="Season9">Season 09</option>
                 </select>
               </div>
-              <script>
-                document.getElementById('my_selection').onchange = function() {
-                    window.location.href = this.children[this.selectedIndex].getAttribute('href');
-                }
-                </script>
-
-              <div id="S1" class="episodes-contens mt-4">
+              <div id="DivContent">
+              <div id="Season1" class="episodes-contens">
                 <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 m-0">
                   <div class="e-item">
                     <div class="block-image position-relative">
@@ -294,7 +290,7 @@
 
                 </div>
               </div>
-              <div id="S2" class="episodes-contens mt-4">
+              <div id="Season2" class="episodes-contens">
                 <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 m-0">
                   <div class="e-item">
                     <div class="block-image position-relative">
@@ -403,6 +399,7 @@
                   </div>
 
                 </div>
+              </div>
               </div>
             </div>
                     </div>

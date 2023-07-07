@@ -1,3 +1,21 @@
+$(document).ready(function(){
+  
+
+    //hides dropdown content
+    $(".episodes-contens").hide();
+    
+    //unhides first option content
+    $("#DivContent:first").show();
+    
+    //listen to dropdown for change
+    $("#select").change(function(){
+      //rehide content on change
+      $('.episodes-contens').hide();
+      //unhides current item
+      $('#'+$(this).val()).show();
+    });
+    
+  });
 (function (jQuery){
     "use strict";
     jQuery(document).ready(function(){
