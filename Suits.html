@@ -166,9 +166,9 @@
                 <span class="trending-year">Sept 2019</span>
               </div>
               <div class="iq-custom-select d-inline-block sea-epi">
-                <select name="Seasons" class="form-control season-select">
-                  <option value="Season1">Season 01</option>
-                  ,<button onclick="document.getElementById('S1').style.display='none'"><option value="Season2">Season 02</option></button>
+                <select name="Seasons" class="form-control season-select" id="my_selection">
+                  <option value="Season 1" href="#S1">Season 01</option>
+                  <option value="Season 2" href="#S2">Season 02</option>
                   <option value="Season2">Season 03</option>
                   <option value="Season2">Season 04</option>
                   <option value="Season2">Season 05</option>
@@ -178,6 +178,11 @@
                   <option value="Season2">Season 09</option>
                 </select>
               </div>
+              <script>
+                document.getElementById('my_selection').onchange = function() {
+                    window.location.href = this.children[this.selectedIndex].getAttribute('href');
+                }
+                </script>
 
               <div id="S1" class="episodes-contens mt-4">
                 <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 m-0">
@@ -289,7 +294,7 @@
 
                 </div>
               </div>
-              <a href="#S2"><div class="episodes-contens mt-4">
+              <div id="S2" class="episodes-contens mt-4">
                 <div class="owl-carousel owl-theme episodes-slider1 list-inline p-0 m-0">
                   <div class="e-item">
                     <div class="block-image position-relative">
@@ -399,7 +404,6 @@
 
                 </div>
               </div>
-              </a>
             </div>
                     </div>
                     <div id="trending-data24" class="overlay-tab tab-pane fade">
