@@ -466,6 +466,7 @@ p{
   .others1{
     margin-bottom: 0;
     text-align: left;
+    height: auto;
 }
   .others{
       width: 100%;
@@ -2597,12 +2598,12 @@ footer .footer-top .info-share li a::before{
 }
 /*********************** Pop Up **********************************/
 .popup {
+    min-height: 100vh;
     position: absolute;
     display: flex;
     z-index: 1;
     margin: 0;
     width: 100%;
-    height: auto;
     overflow: visible;
     background-color: rgba(0, 0, 0, 0.4);
     transition: all 0.4s;
@@ -2624,16 +2625,12 @@ footer .footer-top .info-share li a::before{
     line-height: 25px;
 }
 .popup-content {
+    min-height: 100vh;
     background-color: #ffffff;
     position: absolute;
     border: 1px solid #888888;
     width: 100%;
-    height: auto;
     font-family: "Poppins",sans-serif;
-}
-.popup-content a{
-    color: white;
-    text-decoration: none;
 }
 .box-close {
     position: absolute;
